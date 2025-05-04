@@ -1,0 +1,54 @@
+site_name: Việt Nam và văn học, hội họa, âm nhạc
+site_description: Một trang tổng hợp rất nhiều nội dung liên quan đến văn học, hội họa, âm nhạc và những nội dung tương tự
+site_author: duykhanh471
+
+nav:
+  - 'Trang chủ': index.md
+  - 'Văn học':
+    - 'Dân gian': 'van-hoc-dan-gian.md'
+    - 'Trung đại': 'van-hoc-trung-dai.md'
+    - 'Thế kỉ 20': 'van-hoc-the-ki-20.md'
+    - 'Hiện đại': 'van-hoc-hien-dai.md'
+  - 'Hội họa':
+    - 'Ngày xưa': 'hoi-hoa-ngay-xua.md'
+    - 'Hiện đại': 'hoi-hoa-hien-dai.md'
+  - 'Âm nhạc':
+    - 'Truyền thống': 'nhac-truyen-thong.md'
+    - 'Hiện đại': 'nhac-hien-dai.md'
+  - 'Sách': sach.md
+  - 'Tiếng Việt': 'net-dep-cua-tieng-viet.md'
+
+theme:
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+    - search.highlighting
+    - search.share
+    - search.suggest
+  name: material
+
+plugins:
+  - search
+
+extra:
+  generator: false
